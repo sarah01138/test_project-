@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./newCss/gallary.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+</head>
+<style>
+
+    /* Try */
+    
+    /* Try End */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: black;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+      
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    .backbutton{
+    position: fixed;
+    top: 20px;
+    left:49%;  
+    z-index: 1000;
+    font-size: 40px;
+    color: black;
+    animation-duration: 0.5s;
+    background-color: white;
+    border-radius: 40%;
+    
+  }
+  .backbutton:hover{
+    font-size: 60px;
+    color: white;
+    left: 48.5%;
+    border-radius: 45%;
+    animation-duration: 0.5s;
+    background-color: black;
+    
+  }
+  .backbutton:hover span{
+    display: block;
+}
+    </style>
+<body>
+
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        
+          <img src="./website /IMG-20220715-WA0012.jpg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1534719156993-f3c9448673bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f089cfa06eb1cd7c0f654b39d8fdfd07&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+        <img src="./imagesAndLogos/payushi grid image 2.jpg" style="width:100%">
+        <img src="./website /IMG_20220715_231521.jpg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1583218187966-6bf4aa0d2d20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGluZGlhbiUyMGN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1621787084849-ed98731b3071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aW5kaWFuJTIwY3VsdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1625110110785-9c9ab49ac137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGluZGlhbiUyMGN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+      </div>
+      <div class="column">
+        
+        <img src="./imagesAndLogos/payuhsi grid Image.jpg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1508097549463-97f74cb9a6aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=52c257bf60c788a1332419c74c6a8a01&auto=format&fit=crop&w=1350&q=80"style="width:100%">
+        <img src="./web2/IMG_20220321_142554.jpg" style="width:100%">
+        <img src="./website /IMG-20220723-WA0088.jpg" style="width:100%">
+        <img src="./imagesAndLogos/payushi3.jpg" style="width:100%">
+        <img src="./web2/IMG_20220814_233543.jpg" style="width:100%">
+        <img src="./website /IMG-20220723-WA0095.jpg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1543198926-22fea2a870dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGluZGlhbiUyMGN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+
+        
+      </div>  
+      <div class="column">
+        <a href="index.html"><div class="backbutton"><i class="fa fa-home"></i></div></a>
+        <img src="https://images.unsplash.com/photo-1621787555718-ddea7123efa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZGlhbiUyMGN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1605292356183-a77d0a9c9d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=824&q=80" style="width:100%">
+        <img src="./website /IMG_20220814_075420.jpg" style="width:100%">
+        <img src="./imagesAndLogos/payushi hand.jpeg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1545126178-862cdb469409?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="./web2/IMG_20220320_182549.jpg" style="width:100%">
+        <img src="./website /IMG_20220727_223527.jpg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1598194809345-08b8ed2dd30a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&q=80" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="./website /IMG-20220723-WA0096.jpg" style="width:100%">
+        <img src="./website /IMG20210810060444_04.jpg" style="width:100%">
+        <img src="./website /IMG_1117.jpeg" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1621788893417-fb8b2e03d1e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZGlhbiUyMGN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="https://images.unsplash.com/photo-1601815264039-67c8ba1a7f98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aW5kaWFuJTIwY3VsdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+        <img src="./web2/IMG_20220401_135912.jpg" style="width:100%">
+        <img src="./web2/IMG_20220814_232950.jpg" style="width:100%">
+      </div>
+    </div>
+    
+    </body>
+</html>

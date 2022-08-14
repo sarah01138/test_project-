@@ -1,0 +1,237 @@
+cards-body {
+    box-sizing: border-box;
+}
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+text-align: center;}
+cards-body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0ecfc;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+}
+.media-scroller::-webkit-scrollbar {
+    display: none;
+}
+.article-body img{
+    position: relative;
+    width: 320px;
+    height: 250px;
+    margin-left:25px;
+    align-items: center;
+
+
+ }
+ .article-body {
+     margin-top: 30px;
+    }
+.card-container {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+    /* margin-left: 130px; */
+    left: 0%;
+    right: 25%;
+
+    display: flex;
+    /* background-color: #100e17; */
+    padding: 1.5rem;
+
+    background-color: white;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.card {
+    min-width: 340px;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 16px;
+    background-color: #E2E2E2;
+    box-shadow: -0.5rem 0 1rem rgb(174, 174, 174);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    transition: 0.2s;
+}
+.date {
+    color: #8a8a8a;
+}
+@media(min-width: 1690px) {
+  .card-container{
+      margin-left: 150px;
+  }
+}
+
+@media(min-width: 1900px) {
+    .card-container{
+        margin-left: 180px;
+    }
+    .media-element{
+        margin-bottom: 30px;
+        height: 450px;
+    }
+  }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem;
+}
+
+.tags div {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+}
+
+.card .category-title {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card .article-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card .article-header {
+    margin-bottom: auto;
+    
+}
+
+.card .author {
+    margin-top: 1rem;
+    margin-right: 60px;
+
+}
+
+/* .captions {
+    display: flex;
+} */
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+.card:hover {
+    transform: translateY(-1rem);
+}.card:hover~.card{
+    transform: translateX(100px);
+}
+
+
+
+
+
+
+
+
+/* places to visit in india */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+p.title{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  height: 380px;
+  margin-right: 30px;
+  background-color: #e2e2e2;
+  border-radius: 16px;
+  margin-top: 10px;
+    box-shadow: -0.5rem 0 1rem rgb(174, 174, 174);
+    margin-bottom: 20px;
+}
+
+.media-element > img {
+  inline-size: 90%;
+  aspect-ratio: 9 / 9;
+  object-fit: cover;
+margin: 15px;
+border-radius: 11px;
+
+  
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+.container {
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.page-header {
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  background: var(--gradient-16);
+  color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+}
+
+.page-title {
+  font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
+}

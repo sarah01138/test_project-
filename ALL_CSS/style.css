@@ -1,0 +1,579 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+}
+
+@media(max-width: 1000px) {
+  .media-element{
+    height: max-content!important;
+    width: max-content !important;
+    position: sticky!important;
+   
+  }
+  .media-scroller{
+    padding: 30px !important;
+  }
+  .media-element img{
+    height:300px!important;
+    width:80%!important;
+    align-items: center!important;
+  }
+  
+  .media-element:hover{
+    margin-left :190px !important;
+    transition: all 1s ease-in-out;
+  }
+  
+
+}
+/* @media(max-width: 1000px) {
+  .media-element{
+    display: none!important;
+  }
+
+} */
+
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../imagesAndLogos/sylwia-bartyzel-eU4pipU_8HA-unsplash.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.containerToCenter{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.containerToCenter{
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.containerToCenter span{
+   color: #ff3d3d !important;
+
+}
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    z-index: 1000;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+.hoverable{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+
+  }
+@media (min-width: 1600px) {
+  .marginLeft{
+    /* margin-left: 60px; */
+  }
+}
+.hoverable:before{
+    position:absolute;
+    pointer-events: none;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  .hoverable:hover, .hoverable:active, .hoverable:focus{
+    transform: translateY(-5px);
+  }
+  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  .hoverable:hover{
+    text-decoration: none;
+    color: white !important;
+  }
+  
+  
+  
+@keyframes bounce-animation {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+.bounce {
+    animation-name: bounce-animation;
+    animation-duration: 2s;
+}  
+
+.indiaLogo1{
+    font-family: 'Rancho', cursive;
+    font-size:40px;
+}
+
+
+.ways{background-color: #dbdddf;color:rgb(0, 0, 0) !important;}
+
+#firstwidth{
+  width:25%;
+  }
+@media(max-width:800px){
+  #firstwidth1{
+    width:100% !important;
+    }
+  #firstwidth2{
+    width:100% !important;
+    }
+  #firstwidth3{
+    width:100% !important;
+    }
+  #firstwidth4{
+    width:100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* here is the testing matrial  */
+.contactForm  {
+  width: 280px;
+  right: 7px;
+  top: 35px;
+  bottom: 15px;
+  height: 417px;
+  background: #fff;
+  z-index: 99;
+  padding-top: 10px;
+  position: fixed;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  animation: slide 2s forwards;
+  box-shadow: 0px 0px 6px 2px rgba(255,255,255,1);
+  }
+  
+  .contactForm h3 {
+  font-size: 32px;
+  text-align: center;
+  }
+  
+  form {
+  display: block;
+  position: absolute;
+  margin: 0 auto !important;
+  top: 50%;
+  left: 50%;
+  padding-top: 40px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  input:focus::-webkit-input-placeholder {
+  color: orange;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  }
+  
+  input:focus {
+  border: 3px solid #000;
+  outline: none;
+  }
+  
+  #email, #firstName, #lastName {
+  width: 250px;
+  height: 30px;
+  margin-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  border: 2px solid lightgray;
+  }
+  
+  #email:hover, #firstName:hover, #lastName:hover {
+  border: 2px solid orange;
+  }
+  
+  #cbox {
+    margin: 5px;
+  }
+  
+  #btn {
+  margin-top: 17px;
+  padding: 10px 25px;
+  border: none;
+  background: #f0f0f5;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  }
+  
+  #btn:hover {
+  background: orange;
+  }
+  
+  @keyframes slide {
+  
+  from{right: -700px;}
+  to {right: 7px;
+    }
+  }
+ 
+    
+    .fa-times {
+    font-size: 40px !important;
+    }
+    
+   
+    
+    .main-section {
+    top: 0;
+    width: 100%;
+    height: 100%vh;
+    display: block;
+    position: relative;
+    z-index: -1;
+    }
+    
+    .header {
+    width: 100%;
+    background: orange;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    }
+.whycrypto{
+  background-color: #936663;
+  color: #000 !important;
+  background-image: url("/Users/yatinjhamb/Desktop/blogger crypto 2/ALL_IMAGES/blurbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px); 
+  /*  This be the blur */
+
+
+}
+.whyIndia1{
+  height: 50%!important;
+}
+@media (min-width:800px) 
+{
+.w3-quarter{width:24.99999%!important }  ;
+
+}
+/* this is the testing */
+
+.fly {
+  color:rgba(255,255,255,0);
+  border:2px solid rgba(255,255,255,0);
+  animation:sended 4s 0.8s forwards;
+}
+@keyframes sended {
+  0% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:0;
+    transform:rotate(-45deg) translateX(300%) translateY(-500%);
+  }
+  5% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:1;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  78% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:1;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  79% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:0;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  80% {
+    height:auto;
+    width:auto;
+    color:rgba(255,255,255,0);
+    border:2px solid rgba(255,255,255,0);
+    opacity:0;
+    transform:rotate(0) translateX(0) translateY(0);
+  }
+  100% {
+    height:auto;
+    width:auto;
+    color:#2980b9;
+    border:2px solid rgba(0, 0, 0, 0.5);
+    opacity:1;
+    transform:rotate(0) translateX(0) translateY(0);
+  }
+}
+.fly:before,
+.fly:after {animation:flyout .6s forwards;}
+@keyframes flyout {
+  0% {
+    opacity:1;
+    transform:rotateX(0) rotateZ(0) translateX(-50%) translateY(0) scale(1);
+  }
+  33% {
+    opacity:0.66;
+    transform:rotateX(0) rotateZ(-5deg) translateX(-100%) translateY(0) scale(1);
+  }
+  100% {
+    opacity:0;
+    transform:rotateX(0) rotateZ(0) translateX(1000%) translateY(0) scale(1);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* video css */
+#myVideo {
+  position: relative;
+  min-width: 100%; 
+  min-height: 100%;
+  width:100vw;
+  object-fit: fill;
+}
+.overlay {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: black;
+    opacity: .05;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.content #image2{
+  display: none !important;
+  align-items: center;
+}
+@media (max-width: 786px) {
+  
+  .contentAboutIndia heading{
+    text-align: center;
+  }
+  .contentAboutIndia{
+    align-items: center;
+    margin-bottom: 2rem !important;
+    width: 100%!important;
+
+  } 
+  #hr{
+    display: none;
+  }
+
+  .contentAboutIndia #image2{
+    display: none !important;
+    align-items: center;
+  }
+  .contentAboutIndia .w3-large{
+    align-items: center;
+    box-sizing: border-box!important;
+    width: 100%;
+    text-align: center;
+    margin-right: 90% !important;
+  }
+.card .author{
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.card img{
+  width:97%!important;
+  margin-left: 0!important;
+  height: 100%!important;
+  object-fit:contain!important;
+}
+
+
+}
+  @media(max-width:1284px){
+    .card .author{
+      align-items: center;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .card img{
+      width:97%!important;
+      margin-left: 0!important;
+      height: 100%!important;
+      object-fit:contain!important;
+    }
+  }
+
+  
