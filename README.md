@@ -1,5 +1,7 @@
 # India-Tour
-website Link->
+website Link-> https://payushi1510.github.io/IndiaTour/
+
+This is a team Project for our collage competition
 
 Incredible India - To showcase the diverse and vibrant culture of India
 The project I created was a web app that focused on India and its culture. It was developed using HTML, CSS, and JavaScript for a college competition. The primary goal of the project was to showcase the diverse and vibrant culture of India in an interactive and engaging way.
